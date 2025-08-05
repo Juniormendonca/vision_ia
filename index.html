@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Vision AI</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>VISION AI</h2>
+
+  <div class="filters">
+    <select><option selected>Contrato</option><option>contract_10062025</option><option>contract_09062025</option></select>
+    <select><option selected>Cidade</option></select>
+    <select><option selected>Setor</option></select>
+    <select><option selected>DMC</option></select>
+    <select><option selected>Histórico</option></select>
+  </div>
+
+  <div class="cards">
+    <div class="card"><h3>SÉRIES CRÍTICAS</h3><canvas id="seriesCriticas"></canvas></div>
+    <div class="card"><h3>RANKING DE ÁREAS</h3><canvas id="rankingAreas"></canvas></div>
+    <div class="card"><h3>EFICIÊNCIA DE DMC</h3><canvas id="eficienciaDMC"></canvas></div>
+    <div class="card"><h3>ÍNDICE ÁGUA NÃO FATURADA</h3><canvas id="aguaNaoFaturada"></canvas></div>
+    <div class="card"><h3>EFETIVIDADE DE ÁREAS</h3><canvas id="efetividade"></canvas></div>
+    <div class="card pie-chart"><h3>OPERAÇÃO DE ÁREAS</h3><canvas id="operacao"></canvas></div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -2,32 +2,32 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Vision AI</title>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <title>Good.ia - Seu Incentivador Pessoal</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <h1>Good.ia</h1>
+  <p class="tagline">Leve leveza, positividade e amor próprio para o seu dia.</p>
 
-  <h2>VISION AI</h2>
-
-  <div class="filters">
-    <select><option selected>Contrato</option><option>contract_10062025</option><option>contract_09062025</option></select>
-    <select><option selected>Cidade</option></select>
-    <select><option selected>Setor</option></select>
-    <select><option selected>DMC</option></select>
-    <select><option selected>Histórico</option></select>
+  <div class="controls">
+    <label for="frequency">Frequência das mensagens:</label>
+    <select id="frequency">
+      <option value="3600000">1x por hora</option>
+      <option value="28800000">3x ao dia</option>
+      <option value="86400000">1x por dia</option>
+    </select>
+    <button id="start">Iniciar</button>
   </div>
 
-  <div class="cards">
-    <div class="card"><h3>SÉRIES CRÍTICAS</h3><canvas id="seriesCriticas"></canvas></div>
-    <div class="card"><h3>RANKING DE ÁREAS</h3><canvas id="rankingAreas"></canvas></div>
-    <div class="card"><h3>EFICIÊNCIA DE DMC</h3><canvas id="eficienciaDMC"></canvas></div>
-    <div class="card"><h3>ÍNDICE ÁGUA NÃO FATURADA</h3><canvas id="aguaNaoFaturada"></canvas></div>
-    <div class="card"><h3>EFETIVIDADE DE ÁREAS</h3><canvas id="efetividade"></canvas></div>
-    <div class="card pie-chart"><h3>OPERAÇÃO DE ÁREAS</h3><canvas id="operacao"></canvas></div>
-  </div>
+  <div class="message-box" id="messageBox">Clique em iniciar para receber um incentivo.</div>
+
+  <button id="sos">Preciso de um incentivo agora</button>
+
+  <section class="news">
+    <h2>Boas Notícias</h2>
+    <ul id="newsList"></ul>
+  </section>
 
   <script src="script.js"></script>
-
 </body>
 </html>

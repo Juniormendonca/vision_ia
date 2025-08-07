@@ -123,3 +123,29 @@ new Chart(ctx, {
   },
   options: chartOptions
 });
+
+const sosButton = document.getElementById('sos');
+const sosAnimation = document.getElementById('sosAnimation');
+const sequence = [4, 4, 8];
+let timeoutId;
+
+function animateSequence(seq) {
+  let i = 0;
+  function step() {
+    if (i >= seq.length) {
+      sosAnimation.classList.remove('active');
+      return;
+    }
+    sosAnimation.classList.toggle('active', i % 2 === 0);
+    timeoutId = setTimeout(step, seq[i] * 250);
+    i++;
+  }
+  step();
+}
+
+if (sosButton && sosAnimation) {
+  sosButton.addEventListener('click', () => {
+    clearTimeout(timeoutId);
+    animateSequence(sequence);
+  });
+}

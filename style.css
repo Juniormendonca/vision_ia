@@ -10,6 +10,19 @@ h2 {
   margin-bottom: 20px;
   color: #000033;
 }
+#sos {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+#sosAnimation {
+  width: 100px;
+  height: 100px;
+  border: 2px solid red;
+  margin-bottom: 20px;
+}
+#sosAnimation.active {
+  background-color: red;
+}
 .filters {
   display: flex;
   gap: 10px;

@@ -1,55 +1,49 @@
-
 body {
   font-family: 'Segoe UI', sans-serif;
   background: #f5f7fa;
   margin: 0;
-  padding: 30px;
-}
-h2 {
-  font-size: 26px;
-  margin-bottom: 20px;
-  color: #000033;
-}
-.filters {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 25px;
-  flex-wrap: wrap;
-}
-select {
-  padding: 10px;
-  font-size: 14px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-}
-.card {
-  background: white;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-}
-.card h3 {
-  font-size: 16px;
-  margin-bottom: 10px;
-  color: #222;
-}
-canvas {
-  width: 100% !important;
-  height: 200px !important;
-}
-.card.pie-chart {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.card.pie-chart canvas {
-  width: 100% !important;
-  max-width: 300px;
-  height: auto !important;
-  aspect-ratio: 1 / 1;
+
+h1 {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.tagline {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+.message-box {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  max-width: 400px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sos {
+  margin: 20px 0;
+  padding: 10px 20px;
+}
+
+.news {
+  max-width: 500px;
+}
+
+.news ul {
+  padding-left: 20px;
 }
